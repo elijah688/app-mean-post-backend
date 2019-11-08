@@ -16,7 +16,7 @@ const storage = multer.diskStorage({
       error = null;
     }
     const imagesPath = path.join(__dirname, '../images');
-    cb(error, '/home/elijah/Desktop/MEAN-STACK/mean-app-backend/images')
+    cb(error, imagesPath)
   },
   filename: function (req, file, cb) {
     const name = file.originalname.toLowerCase().split(' ').join("-");

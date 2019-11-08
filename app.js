@@ -4,7 +4,6 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const path = require("path");
 
-
 const routes = require('./routes/posts')
 const authRoutes = require('./routes/auth')
 
